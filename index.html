@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Password Protection Section -->
+  <div id="password-screen">
+    <h2>💖 Welcome, My Love 💖</h2>
+    <p>Enter the secret password to unlock our love story:</p>
+    <input type="password" id="password-input" placeholder="Enter password...">
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="error-message" style="color: red; display: none;">Wrong password! Try again. 😘</p>
+  </div>
+
+  <!-- Main Content (Hidden Initially) -->
+  <div id="main-content" style="display: none;">
+    <header>
+      <h1>Our Love Story ❤️</h1>
+      <p>Celebrating Us Forever</p>
+      <div class="hearts-animation"></div> 
+    </header>
+  
+    <section id="gallery">
+      <h2>Our Precious Memories 📸</h2>
+      <div id="photo-upload">
+        <input type="file" id="upload" accept="image/*" multiple>
+        <button class="heart-button" onclick="uploadPhoto()">Upload Photo</button>
+      </div>
+      <div id="photo-grid"></div>
+    </section>
+  
+    <section id="reasons-i-love-you">
+      <h2>Reasons I Love You 💖</h2>
+      <button class="heart-button" onclick="revealReason()">Click to Reveal a Reason</button>
+      <p id="reason-text"></p>
+    </section>
+  
+    <footer>
+      <p>Made with ❤️ by Kamogelo for Keitumetse</p>
+    </footer>
+  
+    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
